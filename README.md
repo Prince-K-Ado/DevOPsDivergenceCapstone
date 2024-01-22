@@ -4,7 +4,7 @@ Creating and Developing a use case for API with Azure Cloud
 # Main Branch - 5 Day Plan
 
 ## Day 1
-- **Initial Setup**: Create the main branch in the Azure repository.
+- **Initial Setup**: Create the main branch on GitHub.
 - **Project Overview**: Document the project requirements and objectives in the README.md.
 
 ## Day 2
