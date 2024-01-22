@@ -1,5 +1,8 @@
 # <ins> Project Overview </ins>
 
+# Diagram
+  <p><img src="CapstoneDivergence.png" alt="diagram" /></p>
+
 ## 1. Writing a Python API: 
  - **Using the Django framework.**
   
