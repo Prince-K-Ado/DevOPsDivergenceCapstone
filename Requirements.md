@@ -22,7 +22,7 @@
  - **Implement an Azure DevOps pipeline for automatic deployment.**
    
 ## 7. API Structure Design: 
- - **Today’s task includes figuring out the API structure.**
+ - **This task includes figuring out the API structure.**
    
 ## 8. Data Handling: 
  - **The API should handle requests, process them using Python and PostgreSQL, and return responses.**
