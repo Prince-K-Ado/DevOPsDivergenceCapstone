@@ -95,13 +95,27 @@ WSGI_APPLICATION = 'capstoneproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': BASE_DIR / 'db.capstoneapp_capstoneapp',
     }
+} """
+
+DATABASES = {
+		    
+    # connecting to the azure database
+    'default': {
+		'ENGINE': 'django.db.backends.postgresql',
+		'NAME': 'postgres',
+		'USER': 'postgres',
+		'PASSWORD': '12345qwert!@#$%',
+		'HOST': 'capstoneapi-database-228.postgres.database.azure.com',
+		'PORT': '5432',
+	}
 }
+
 
 
 # Password validation
