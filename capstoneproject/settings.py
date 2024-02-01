@@ -58,7 +58,6 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://capstoneapi-webapp.azurewebsites.net",
-    "*"
 ]
  
 CORS_ORIGIN_WHITELIST = (
