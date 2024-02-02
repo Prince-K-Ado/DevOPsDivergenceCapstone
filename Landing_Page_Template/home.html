@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone API Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    margin-top: 20px;
+    align-self: start;
+}
+
+h1 {
+    margin-top: 20px;
+    align-self: start;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    align-content: center;
+    background-color: rgb(47, 123, 255);
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    align-content: center;
+    align-self: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #0098fd;
+    border: none;
+    color: rgb(164, 204, 235);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    align-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.capstone {
+    background-color: #28a745;
+}
+
+.capstone:hover {
+    background-color: #218838;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Our API Service</h1>
+        <h2>Manage your API with ease.</h2>  
+        <div class="button-container">
+            <h2><button onclick="window.location.href='http://127.0.0.1:8000/capstoneapi/1/'"class="button">CapstoneAPI Fetching First Item</button></h2>
+            <h2><button onclick="window.location.href='http://127.0.0.1:8000/admin/'" class="button"> Admin Panel</button></h2>
+            <a href="http://127.0.0.1:8000/admin/" class="button">Admin Panel</a>
+            <a href="http://127.0.0.1:8000/capstoneapi/1/" class="button capstone">CapstoneAPI Fetching First Item</a>
+        </div>
+    </div>
+        
+    <footer
+        style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <p>&copy; 2023 API Service. All rights reserved. Contact us | About us | Privacy Policy</p>
+    </footer>
+</body>
+</html>

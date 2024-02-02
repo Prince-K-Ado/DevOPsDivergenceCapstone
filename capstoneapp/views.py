@@ -12,7 +12,15 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.core.files.storage import default_storage
 from rest_framework.views import APIView
+import logging
 
+
+
+
+# set up logging
+logger = logging.getLogger(__name__)
+
+@csrf_exempt
 @api_view(['GET', 'POST'])
 def capstoneapi_list(request):
 
@@ -28,7 +36,8 @@ def capstoneapi_list(request):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+
+@csrf_exempt
 @api_view(['GET', 'PUT', 'DELETE'])
 def capstoneapi_detail(request,id):
 
@@ -52,6 +61,7 @@ def capstoneapi_detail(request,id):
         capstoneapp.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     
+    
 
 
 
@@ -71,8 +81,9 @@ def SaveFile(request):
  
     # file = request.FILES['uploadedFile']
     # file_name = default_storage.save(file.name, file)
-    return JsonResponse(file_name, safe=False)
+    #return JsonResponse(file_name, safe=False)
  
 def home_capstone_view(request):
-    return HttpResponse('This is a hard Capstone project!!!')
+    #return HttpResponse('This is a hard Capstone project!!!')
+    return render(request, 'home.html')
 
